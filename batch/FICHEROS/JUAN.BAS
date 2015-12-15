@@ -1,0 +1,26 @@
+CLS
+DIM A(6)
+INPUT "INTRODUCE EL PRIMER ELEMENTO DE LA TABLA:" A(1)
+I = 2
+WHILE I <= 6
+   INPUT "INTRODUCE NUMERO:" NUM
+   J = I - 1
+   FOR F = 1 TO J
+     IF NUM < > A(F) THEN
+         CONT = CONT + 1
+        ELSE
+         PRINT "NUMERO REPETIDO"
+     END IF
+   NEXT F
+   IF CONT = F - 1 THEN
+      A(I) = NUM
+      I = I + 1
+   END IF
+   CONT = 0
+ WEND
+ PRINT "LOS NUMEROS DE LA TABLA SON:"
+ FOR I = 1 TO 6
+   PRINT A(I)
+ NEXT I
+ END
+

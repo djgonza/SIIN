@@ -1,0 +1,18 @@
+CLS
+A=1
+B=2
+C=A+B
+PRINT A
+PRINT B
+PRINT C
+'*********************
+A=A+25
+B=B+1
+C=A+B
+PRINT "NUEVOS VALORES"
+PRINT A
+PRINT B
+PRINT C
+
+END
+
