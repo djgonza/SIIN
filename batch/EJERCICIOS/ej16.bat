@@ -82,8 +82,8 @@ cls
 	:menu-ficheros
 		cls
 		set /p nombre=Introduce el nombre del fichero (FIN para salir): 
-		if not exist c:\batch\ficheros\%nombre% goto menu-ficheros-error
 		if %nombre%==FIN goto inicio
+		if not exist c:\batch\ficheros\%nombre% goto menu-ficheros-error
 		type c:\batch\ficheros\%nombre%
 		pause
 		goto menu-ficheros
@@ -114,12 +114,15 @@ cls
 		:menu-carpetas-crear
 			echo.
 			set /p nombre=Nombre de la Carpetas
-			if exist c:\batch\ficheros\%nombre%\null goto
+			if exist c:\batch\ficheros\%nombre%\null goto menu-carpetas
 			mkdir c:\batch\ficheros\%nombre%
 			echo Carpeta creada!!!!
 			pause
 			goto menu-carpetas
 		:menu-carpetas-mostrar
-
+			echo.
+			set /p nombre=Nombre de la Carpetas
+			if not exist c:\batch\ficheros\%nombre%\null goto menu-carpetas
+			dir c:\\batch\ficheros%nombre%
 :fin
 	echo ************** Fin del proceso ******************
