@@ -1,0 +1,6 @@
+body {
+	display: flex !important;
+}
+body>div{
+	margin: 0 auto !important;
+}
