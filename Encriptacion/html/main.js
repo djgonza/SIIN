@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 
 	$("#acceder").click (function () {
-		if($('#pass').val().toString().length < 4 && $('#pass').val().toString().length > 8){
+		if($('#pass').val().toString().length < 4 || $('#pass').val().toString().length > 8 || $('#name').val() == ''){
 			alert("Contraseña incorrecta");
 		}else{
 			if(Login()){
