@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=filas\ columnas\ paridad
+comment0.target=CadenaEnviar(int,\ int,\ int)
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ CadenaEnviar\r\n
+comment1.params=
+comment1.target=CadenaEnviar()
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ CadenaEnviar\r\n
+comment2.params=
+comment2.target=void\ crearCadena()
+comment2.text=\r\n\ \ \r\n
+comment3.params=
+comment3.target=void\ escribir()
+comment3.text=\r\n\ \ \r\n
+numComments=4
